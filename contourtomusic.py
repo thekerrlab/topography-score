@@ -60,13 +60,12 @@ if converttonotes:
     
 #%%
 if converttomidi:
-    offset = 30
-    degrees  = [60, 62, 64, 65, 67, 69, 71, 72]  # MIDI note number
+    offset = 30 # To start from the correct note
     track    = 0
     channel  = 0
     time     = 0    # In beats
     duration = 1    # In beats
-    tempo    = 60   # In BPM
+    tempo    = 300   # In BPM
     volume   = 100  # 0-127, as per the MIDI standard
     MyMIDI = MIDIFile(1)  # One track, defaults to format 1 (tempo track is created
     MyMIDI.addTempo(track, time, tempo)
