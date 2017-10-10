@@ -6,7 +6,6 @@ from pylab import loadtxt, plot, interp, arange, linspace
 from playpiece import makenote, play
 from midiutil.MidiFile import MIDIFile
 
-
 # Parameters
 trimstart = 200
 trimend = 400
